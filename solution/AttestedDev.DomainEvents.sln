@@ -28,6 +28,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.DomainEvents.Web", "sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttestedDev.Domain.Tests", "test\AttestedDev.Domain.Events.Tests\AttestedDev.Domain.Tests.csproj", "{962290AA-9584-407B-9AAF-F72320C1ED43}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{07B7A4C7-5A09-41AA-A49B-F0C8F5B3E402}"
+	ProjectSection(SolutionItems) = preProject
+		build\build.ps1 = build\build.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

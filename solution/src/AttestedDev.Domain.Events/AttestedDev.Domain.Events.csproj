@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Contains the basic domain event implementations</Description>
+    <Company>Attested Dev</Company>
   </PropertyGroup>
 
   <ItemGroup>

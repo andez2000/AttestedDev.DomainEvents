@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>AttestedDev.Domain.Events</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Attested Dev</Company>
+    <Description>Contains the domain event abstractions</Description>
   </PropertyGroup>
 
 </Project>
