@@ -1,11 +1,11 @@
+using AttestedDev.Domain.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Acme.Domain.Events;
 
 namespace Acme.Domain.Setup
 {
-	public class TestDomainEventHandlerProvider : IDomainEventHandlerProvider
+    public class TestDomainEventHandlerProvider : IDomainEventHandlerProvider
 	{
 		private readonly Dictionary<Type, List<object>> _registrations = new Dictionary<Type, List<object>>();
 

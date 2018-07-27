@@ -1,17 +1,18 @@
-﻿using System;
-using Acme.Domain.Setup;
+﻿using Acme.Domain.Setup;
+using AttestedDev.Domain.Events;
 using Moq;
+using System;
 using Xunit;
 
 namespace Acme.Domain.Events
 {
-	/// <summary>
-	/// Tests around the domain event raising and dispatching.
-	/// <para>
-	/// This is to support both synchronous and asynchronous calls through the raise->dispatch stack.
-	/// </para>
-	/// </summary>
-	[Trait("Integration Tests", "")]
+    /// <summary>
+    /// Tests around the domain event raising and dispatching.
+    /// <para>
+    /// This is to support both synchronous and asynchronous calls through the raise->dispatch stack.
+    /// </para>
+    /// </summary>
+    [Trait("Integration Tests", "")]
 	public class RaiseMultipleEventTests
 	{
 		private readonly DomainEvent<GoodEventMeta> _goodEvent1 = new DomainEvent<GoodEventMeta>(Guid.Parse("{8343B3D2-2109-4B14-95BD-7DCF88314001}"), 0, new GoodEventMeta());

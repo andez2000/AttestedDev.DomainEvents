@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AttestedDev.Domain.Events.Abstractions\AttestedDev.Domain.Events.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\AttestedDev.Domain.Events\AttestedDev.Domain.Events.csproj" />
+    <ProjectReference Include="..\Acme.Application\Acme.Application.csproj" />
+  </ItemGroup>
+
+</Project>

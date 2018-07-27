@@ -1,17 +1,17 @@
-﻿using System;
-using Acme.Domain.Events;
+﻿using AttestedDev.Domain.Events;
 using Moq;
+using System;
 
 namespace Acme.Domain.Setup
 {
-	/// <summary>
-	/// Builds the <see cref="DomainEventRaiser"/> instance.
-	/// <para>
-	/// Given the <see cref="DomainEventRaiser"/> is a single point of contact to the client APIs to raise events
-	/// the underlying implementation remains hidden.
-	/// </para>
-	/// </summary>
-	class DomainEventRaiserSutBuilder
+    /// <summary>
+    /// Builds the <see cref="DomainEventRaiser"/> instance.
+    /// <para>
+    /// Given the <see cref="DomainEventRaiser"/> is a single point of contact to the client APIs to raise events
+    /// the underlying implementation remains hidden.
+    /// </para>
+    /// </summary>
+    class DomainEventRaiserSutBuilder
 	{
 		private IDomainEventDispatcher _domainEventDispatcher;
 		private IDomainEventHandlerProvider _domainEventHandlerProvider;

@@ -1,18 +1,19 @@
-﻿using System;
-using Acme.Domain.Setup;
+﻿using Acme.Domain.Setup;
+using AttestedDev.Domain.Events;
 using Moq;
+using System;
 using Xunit;
 
 namespace Acme.Domain.Events
 {
-	/// <summary>
-	/// Tests around the domain event raising and dispatching.
-	/// <para>
-	/// These tests are focused on synchronous calls through the raise->dispatch stack where a handler will throw
-	/// exceptions to ensure errors are handled accordingly.
-	/// </para>
-	/// </summary>
-	[Trait("Integration Tests", "")]
+    /// <summary>
+    /// Tests around the domain event raising and dispatching.
+    /// <para>
+    /// These tests are focused on synchronous calls through the raise->dispatch stack where a handler will throw
+    /// exceptions to ensure errors are handled accordingly.
+    /// </para>
+    /// </summary>
+    [Trait("Integration Tests", "")]
 	public class RaiseSingleEventWithErrorsTests
 	{
 		private readonly DomainEvent<BadEventMeta> _badEvent = new DomainEvent<BadEventMeta>(

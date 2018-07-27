@@ -18,7 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Acme.Domain\Acme.Domain.csproj" />
+    <ProjectReference Include="..\..\src\AttestedDev.Domain.Events.Abstractions\AttestedDev.Domain.Events.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\AttestedDev.Domain.Events\AttestedDev.Domain.Events.csproj" />
   </ItemGroup>
 
 </Project>

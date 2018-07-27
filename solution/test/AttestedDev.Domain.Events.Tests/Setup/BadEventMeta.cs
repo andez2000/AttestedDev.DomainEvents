@@ -1,8 +1,8 @@
-using Acme.Domain.Events;
+using AttestedDev.Domain.Events;
 
 namespace Acme.Domain.Setup
 {
-	public class BadEventMeta : EventMetaData
+    public class BadEventMeta : EventMetaData
 	{
 	}
 }
