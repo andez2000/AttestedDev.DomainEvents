@@ -3,6 +3,10 @@ $newVersion = $args[1] # the build version, from VSTS build i.e. "1.1.20170323.1
 
 Write-Host "Starting process of generating new version number for the csproj"
 
+Write-Host "csproj : " + $csprojPath
+Write-Host "version: " + $newVersion
+
+
 $splitNumber = $newVersion.Split(".")
 
 if( $splitNumber.Count -eq 4 )
